@@ -1,3 +1,6 @@
+permissions:
+  contents: write
+  
 name: Build
 
 on:
@@ -67,7 +70,9 @@ jobs:
         id: release
         with:
           files: ${{env.PROJECT_NAME}}/bin/x64/Release/${{env.PROJECT_NAME}}/*
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Trigger Plugin Repo Update
         uses: peter-evans/repository-dispatch@v2
         if: ${{ steps.release.conclusion == 'success' }}

@@ -56,14 +56,16 @@ jobs:
           name: ${{env.PROJECT_NAME}}
           path: ${{env.PROJECT_NAME}}/bin/x64/Release/${{env.PROJECT_NAME}}
           if-no-files-found: error
-
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: TestResults
           path: TestResults
-
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Create Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')

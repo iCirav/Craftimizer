@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{env.PROJECT_NAME}}
-          path: ${{env.PROJECT_NAME}}/bin/x64/Release/${{env.PROJECT_NAME}}
+          path: ${{env.PROJECT_NAME}}/bin/x64/Release/${{env.PROJECT_NAME}}/*
           if-no-files-found: error
           
       - name: Upload Test Results

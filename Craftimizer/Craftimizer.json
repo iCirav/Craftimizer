@@ -21,10 +21,10 @@
     "CategoryTags": [
         "Jobs"
     ],
-    "IconUrl": "https://git.camora.dev/iCirav/Craftimizer/raw/branch/main/icon.png",
+    "IconUrl": "https://raw.githubusercontent.com/iCirav/Craftimizer/main/icon.png",
     "ImageUrls": [
-        "https://git.camora.dev/iCirav/Craftimizer/raw/branch/main/Images/RecipeNote.png",
-        "https://git.camora.dev/iCirav/Craftimizer/raw/branch/main/Images/SynthHelper.png",
-        "https://git.camora.dev/iCirav/Craftimizer/raw/branch/main/Images/MacroEditor.png"
+        "https://raw.githubusercontent.com/iCirav/Craftimizer/main/Images/RecipeNote.png",
+        "https://raw.githubusercontent.com/iCirav/Craftimizer/main/Images/SynthHelper.png",
+        "https://raw.githubusercontent.com/iCirav/Craftimizer/main/Images/MacroEditor.png"
     ]
 }
